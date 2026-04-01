@@ -69,6 +69,7 @@ int main() {
         }
         double tiempo = (double)(clock() - inicio) / CLOCKS_PER_SEC;
         cout << "\nTiempo: " << tiempo << " segundos\n";
+
         cout << "Usa WASD para moverte (o flechas)." << endl;
 
         int nx = x;

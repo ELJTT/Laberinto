@@ -6,5 +6,5 @@ Poner laberinto.cpp en un compilador de C++ ejecutar en consola e intenta supera
 
 integrantes:
 Jhonnatan Alcivar
-Diogo Coram
 Sebastian Garzon
+Diogo Coral 
