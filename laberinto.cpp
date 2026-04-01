@@ -35,6 +35,8 @@ char mapa[27][66] = {
 
 
     int x = 1, y = 1;
+    // inicio de temporizador
+    clock_t inicio = clock(); 
 
     while (true) {
         // limpiar pantalla (ANSI)
@@ -44,9 +46,12 @@ char mapa[27][66] = {
         for (int i = 0; i < 27; i++) {
             cout << mapa[i] << endl;
         }
+        
+        double tiempo = (double)(clock() - inicio) / CLOCKS_PER_SEC;
 
         // input
         char mov;
+        cout << "\nTiempo: " << tiempo << " segundos\n";
         cout << "Movimiento (WASD) oprimir (Enter) por tecla: ";
         cin >> mov;
 
@@ -76,6 +81,7 @@ char mapa[27][66] = {
         if (celdaDestino == 'E') {
             cout << "\033[2J\033[1;1H";
             cout << "Ganaste\n";
+            cout << "Tiempo total: " << tiempoFinal << " segundos\n";
             cin.get();
             cin.get();
             break;
